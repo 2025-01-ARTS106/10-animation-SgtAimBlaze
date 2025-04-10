@@ -43,9 +43,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Up
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: Direction
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2676771084031561885}
   m_Solo: 0
@@ -120,9 +120,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Right
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: Direction
+    m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2232576781003901473}
   m_Solo: 0
@@ -172,26 +172,8 @@ AnimatorController:
   m_Name: professor_walk_cycle_no_hat (2)_18
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Down
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Up
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Left
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Right
-    m_Type: 4
+  - m_Name: Direction
+    m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -243,8 +225,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Down
+  - m_ConditionMode: 6
+    m_ConditionEvent: Direction
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4217340992612482568}
@@ -268,9 +250,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Left
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: Direction
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4241928368995191541}
   m_Solo: 0
